@@ -1,0 +1,158 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>College Admin Dashboard</title> 
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css " rel="stylesheet"> 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/5.15.3/css/all.min.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz, wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz, wght,FILL,GRAD@24,400,0,0" /> 
+  <style> 
+    /* Sidebar */     .sidebar {       height: 100%;       width: 250px;       position: fixed;       top: 0;       left: 0;       background-color: #1c0766;       padding-top: 50px; 
+    } 
+ 
+    .sidebar ul {       list-style-type: none;       padding: 0; 
+    } 
+ 
+    .sidebar ul li {       padding: 10px 20px;       color: rgb(241, 238, 255); 
+    } 
+ 
+    .sidebar ul li:hover {       background-color: #1c0766; 
+    } 
+ 
+    /* Main content */ 
+    .content {       margin-left: 250px;       padding: 20px; 
+    } 
+ 
+    .card { 
+      margin-bottom: 20px; 
+    } 
+ 
+    /* Navigation bar */ 
+    .navbar {       background-color: #1c0766; 
+    } 
+ 
+    .navbar-brand,     .navbar-text { 
+      color: rgb(241, 238, 255); 
+    } 
+ 
+    .search-bar {       margin-right: 20px; 
+    } 
+ 
+/* --------- lOGO ----------- */ 
+   .logo {     padding: 20px; 
+  } 
+ 
+  .logo img {     height: 80px;     width: 120px; 
+  } 
+ 
+ 
+ 
+ 
+  </style> 
+</head> 
+<body> 
+ 
+  <nav class="navbar navbar-expand-lg"> 
+    <div class="container-fluid"> 
+       <ul class="navbar-nav ml-auto"> 
+          <li class="nav-item"> 
+            <button type="button" class="btn btn-light" id="addStudentBtn">Add 
+Student</button> 
+          </li> 
+        </ul> 
+   
+      </div> 
+    </div> 
+  </nav> 
+   
+ 
+<div class="sidebar"> 
+ 
+  <div class="logo"> 
+    <img id="main-logo" src="unilogo.png" alt="Study Portal Logo"> 
+  </div> 
+ 
+  <ul> 
+    <li><span class="material-symbols-outlined">home</span>Home</li> 
+    <li><span class="material-symbols-outlined">dashboard</span>Dashboard</li> 
+    <li><span class="material-symbols-outlined">person</span>Students</li> 
+    <li><span class="material-symbols-outlined">person</span>Faculty</li> 
+    <li><span class="material-symbolsoutlined">local_library</span>Courses</li> 
+    <li><span class="material-symbols-outlined">settings</span>Settings</li> 
+    <li><span class="material-symbols-outlined">logout</span>Logout</li> 
+  </ul> 
+</div> 
+ 
+<div class="content"> 
+  <h1>Students</h1> 
+  <!-- Sample list of students --> 
+  <table class="table"> 
+    <thead> 
+      <tr> 
+        <th>Name</th> 
+        <th>Email</th> 
+        <th>Mobile</th> 
+        <th>Branch</th> 
+        <th>DOB</th> 
+        <th>City</th> 
+      </tr> 
+    </thead> 
+    <tbody> 
+      <tr> 
+        <td>Savali Shigawan</td> 
+        <td>savali@gmail.com</td> 
+        <td>1234567890</td> 
+        <td>Information Technology</td> 
+        <td>02-02-2004</td> 
+        <td>Pune</td> 
+      </tr> 
+ 
+      <tr> 
+        <td>Prerana Yadav</td> 
+        <td>prerana@gmail.com</td> 
+        <td>1234567890</td> 
+        <td>Information Technology</td> 
+        <td>19-02-2003</td> 
+        <td>Pune</td> 
+      </tr> 
+ 
+      <tr> 
+        <td>Prachi Kolte</td> 
+        <td>prachi@gmail.com</td> 
+        <td>1234567890</td> 
+        <td>Information Technology</td> 
+        <td>16-03-2003</td> 
+        <td>Ahmendnagar</td> 
+      </tr> 
+ 
+      <tr> 
+        <td>Rushikesh Pawar</td> 
+        <td>rushikesh@example.com</td> 
+        <td>1234567890</td> 
+        <td>Computer Science</td> 
+        <td>14-04-2003</td> 
+        <td>Sambhajinagar</td> 
+      </tr> 
+ 
+      <tr> 
+        <td>Vishal Desai</td> 
+        <td>vishal@example.com</td> 
+        <td>1234567890</td> 
+        <td>Electronics</td> 
+        <td>28-09-2002</td> 
+        <td>Solapur</td> 
+      </tr> 
+      <!-- Add more rows as needed --> 
+    </tbody> 
+  </table> 
+</div> 
+ 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
+<script 
+src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+></script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+ 
+</body> 
+</html> 
